@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="layout_container">
+            <h1 class="glow">Password Generator</h1>
+
+            <p id="password_container"></p>
+
+            <input type="range" min="8" max="48" value="8" class="slider" id="length_slider">
+            <p id="text_characters">0 Charaters</p>
+
+            <div class="checkbox_container">
+
+                <label class="checkbox">Lowercase
+                    <input type="checkbox" checked="checked" id="cb_lowercase" onclick="onCheckboxChange()">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">Uppercase
+                    <input type="checkbox" checked="checked" id="cb_uppercase" onclick="onCheckboxChange()">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="checkbox">Numbers
+                    <input type="checkbox" checked="checked" id="cb_numbers" onclick="onCheckboxChange()">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="checkbox">Symbols
+                    <input type="checkbox" id="cb_symbols" onclick="onCheckboxChange()">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div>Click on password to copy it to clipboard</div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
